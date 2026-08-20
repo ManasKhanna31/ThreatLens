@@ -1,0 +1,42 @@
+{
+  "demo_mode": true,
+  "collector": {
+    "enabled": true,
+    "interval_seconds": 90,
+    "max_events_per_sweep": 25,
+    "bootstrap_minutes": 120
+  },
+  "retention": {
+    "max_logs": 2000,
+    "max_incidents": 750,
+    "max_chats": 200
+  },
+  "feeds": {
+    "threat_intel_auto_refresh": true,
+    "sources": [
+      "CISA KEV",
+      "Abuse.ch Feodo",
+      "URLhaus"
+    ]
+  },
+  "detection": {
+    "dedup_window_minutes": 20,
+    "group_window_hours": 24,
+    "reopen_window_hours": 8,
+    "sla_minutes": {
+      "CRITICAL": 30,
+      "HIGH": 120,
+      "MEDIUM": 360,
+      "LOW": 720
+    },
+    "auto_close_hours": {
+      "LOW": 24,
+      "MEDIUM": 72
+    },
+    "risk_thresholds": {
+      "critical": 80,
+      "high": 55,
+      "medium": 30
+    }
+  }
+}
