@@ -1,4 +1,4 @@
-# ThreatLens v2.1 — Complete Feature Documentation
+# ThreatLens v2.1 -- Complete Feature Documentation
 
 > **AI-Powered Security Intelligence Platform**
 > Stack: FastAPI + MySQL + Groq LLM + MITRE ATT&CK + CISA/Abuse.ch Threat Feeds
@@ -6,6 +6,8 @@
 ---
 
 ## Architecture Overview
+
+
 
 ![ThreatLens Architecture](docs/architecture_diagram.png)
 
