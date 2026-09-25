@@ -1,7 +1,7 @@
 # ThreatLens SaaS Testing Guide
 
 This guide provides step-by-step instructions for validating every major component of the ThreatLens platform.
-
+---
 ## 1. Environment Verification
 Before testing, ensure both services are running:
 - **Backend**: [http://127.0.0.1:8000/health](http://127.0.0.1:8000/health) (Should show `status: healthy`)
