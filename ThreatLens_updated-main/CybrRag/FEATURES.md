@@ -66,7 +66,7 @@ graph TB
 | **What it does** | Extracts 9 structured fields from any raw log: `source_ip`, `dest_ip`, `event_id`, `user`, `status`, `log_type`, `process`, `port`, `hostname`. |
 | **How it works** | First pass uses purpose-built regex extractors for each field. If both `source_ip` and `event_id` are missing (indicating an unstructured format), it falls back to the Groq LLM to dynamically parse the log. The LLM fallback is wrapped in `try/except` so failures never crash the pipeline. |
 | **What makes it unique** | Most SIEM parsers are regex-only and fail silently on unknown formats. ThreatLens uses AI as a **safety net** — if regex can't parse it, the LLM understands it contextually. This means the system can handle logs it's never seen before. |
-
+---
 ### Feature 2: 12-Format Log Type Classification
 | | |
 |---|---|
